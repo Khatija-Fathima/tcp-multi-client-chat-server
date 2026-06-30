@@ -1,6 +1,6 @@
 # TCP Multi-Client Chat Server
 
-A Python-based TCP Multi-Client Chat Server that enables multiple clients to communicate simultaneously using socket programming and multithreading. The project demonstrates concurrent client handling, real-time messaging, and performance analysis.
+A Python-based TCP Multi-Client Chat Server that enables multiple clients to communicate simultaneously using TCP socket programming and multithreading. The project demonstrates real-time communication, concurrent client handling, chat logging, and network packet analysis using Wireshark.
 
 ---
 
@@ -9,10 +9,10 @@ A Python-based TCP Multi-Client Chat Server that enables multiple clients to com
 - Multi-client communication using TCP sockets
 - Concurrent client handling with multithreading
 - Real-time message broadcasting
-- Client connection and disconnection handling
 - Chat logging
-- Performance monitoring and visualization
-- CSV-based performance analysis
+- Graceful client connection and disconnection
+- TCP packet analysis using Wireshark
+- Network topology testing
 
 ---
 
@@ -22,8 +22,9 @@ A Python-based TCP Multi-Client Chat Server that enables multiple clients to com
 - TCP Socket Programming
 - Multithreading
 - Computer Networks
+- Wireshark
+- Linux
 - CSV
-- Matplotlib
 - Git & GitHub
 
 ---
@@ -39,8 +40,8 @@ tcp-multi-client-chat-server/
 ├── performance_results.csv
 ├── chat_log.txt
 ├── Report.pdf
-├── screenshots/
-└── Graphs/
+├── SCREENSHOTS/
+└── README.md
 ```
 
 ---
@@ -53,51 +54,99 @@ tcp-multi-client-chat-server/
 python server.py
 ```
 
-### Start Clients
-
-Open separate terminals and run:
+### Start Client 1
 
 ```bash
 python client.py
 ```
 
-Multiple clients can connect to the server simultaneously.
+### Start Additional Clients
 
----
+Open multiple terminals and run:
 
-## Output
+```bash
+python client.py
+```
 
-The project generates:
-
-- Chat communication between clients
-- Performance statistics
-- Chat log file
-- CSV performance data
-- Graphical performance visualization
+Clients can communicate with each other in real time through the server.
 
 ---
 
 ## Screenshots
 
-### Server
+### Network Topology
 
-![Server](screenshots/server.png)
-
-### Client Connection
-
-![Client](screenshots/client.png)
-
-### Chat Communication
-
-![Chat](screenshots/chat.png)
+![Network Topology](SCREENSHOTS/net.png)
 
 ---
 
-## Performance Graphs
+### Multiple Clients Connected
 
-### Performance Analysis
+![Multi Client Chat](SCREENSHOTS/multi_client_chat.png)
 
-![Performance](Graphs/performance_graph.png)
+---
+
+### Chat Message Exchange
+
+![Chat Message](SCREENSHOTS/chat_message.png)
+
+---
+
+### Broadcast Message
+
+![Broadcast Message](SCREENSHOTS/broadcast_message.png)
+
+---
+
+### Chat Log
+
+![Chat Log](SCREENSHOTS/chat_log.png)
+
+---
+
+### TCP Handshake (Wireshark)
+
+![TCP Handshake](SCREENSHOTS/tcp_handshake.png)
+
+---
+
+### Wireshark Packet Capture
+
+![Wireshark Capture](SCREENSHOTS/wireshark_capture.png)
+
+---
+
+### PingAll Verification
+
+![PingAll](SCREENSHOTS/topology_pingall.png)
+
+---
+
+### Connection Closed Successfully
+
+![Connection Close](SCREENSHOTS/connection_close.png)
+
+---
+
+## Network Configuration
+
+### Host IP Configuration
+
+**Host H1**
+
+![H1](SCREENSHOTS/h1%20ifconfig.png)
+
+**Host H2**
+
+![H2](SCREENSHOTS/h2%20ifconfig.png)
+
+**Host H3**
+
+![H3](SCREENSHOTS/h3%20ifconfig.png)
+
+**Host H4**
+
+![H4](SCREENSHOTS/h4%20ifconfig.png)
 
 ---
 
@@ -107,8 +156,10 @@ The project generates:
 - Client-Server Architecture
 - Multithreading in Python
 - Network Communication
-- Performance Analysis
+- TCP Three-Way Handshake
+- Packet Analysis using Wireshark
 - Concurrent Programming
+- Chat Application Development
 
 ---
 
