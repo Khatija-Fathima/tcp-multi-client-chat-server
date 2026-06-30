@@ -1,18 +1,19 @@
 # TCP Multi-Client Chat Server
 
-A Python-based TCP Multi-Client Chat Server that enables multiple clients to communicate simultaneously using TCP socket programming and multithreading. The project demonstrates real-time communication, concurrent client handling, chat logging, and network packet analysis using Wireshark.
+A Python-based TCP Multi-Client Chat Server developed using TCP socket programming and multithreading. This project demonstrates concurrent client communication, message broadcasting, connection management, packet analysis using Wireshark, and performance evaluation.
 
 ---
 
 ## Features
 
-- Multi-client communication using TCP sockets
-- Concurrent client handling with multithreading
+- Multi-client chat system
+- TCP socket programming
+- Multithreaded server
 - Real-time message broadcasting
+- Client connection and disconnection handling
 - Chat logging
-- Graceful client connection and disconnection
-- TCP packet analysis using Wireshark
-- Network topology testing
+- Network packet analysis using Wireshark
+- Performance visualization
 
 ---
 
@@ -23,8 +24,8 @@ A Python-based TCP Multi-Client Chat Server that enables multiple clients to com
 - Multithreading
 - Computer Networks
 - Wireshark
-- Linux
 - CSV
+- Matplotlib
 - Git & GitHub
 
 ---
@@ -40,7 +41,8 @@ tcp-multi-client-chat-server/
 ├── performance_results.csv
 ├── chat_log.txt
 ├── Report.pdf
-├── SCREENSHOTS/
+├── screenshots/
+├── Graphs/
 └── README.md
 ```
 
@@ -48,105 +50,111 @@ tcp-multi-client-chat-server/
 
 ## How to Run
 
-### Start the Server
+### Start Server
 
 ```bash
 python server.py
 ```
 
-### Start Client 1
+### Start Clients
+
+Open multiple terminals and run
 
 ```bash
 python client.py
 ```
-
-### Start Additional Clients
-
-Open multiple terminals and run:
-
-```bash
-python client.py
-```
-
-Clients can communicate with each other in real time through the server.
 
 ---
 
 ## Screenshots
 
-### Network Topology
+### Project Files
 
-![Network Topology](SCREENSHOTS/net.png)
+![](screenshots/assignment4_files.png)
 
 ---
 
 ### Multiple Clients Connected
 
-![Multi Client Chat](SCREENSHOTS/multi_client_chat.png)
+![](screenshots/multi_client_chat.png)
 
 ---
 
-### Chat Message Exchange
+### Chat Communication
 
-![Chat Message](SCREENSHOTS/chat_message.png)
+![](screenshots/chat_message.png)
 
 ---
 
 ### Broadcast Message
 
-![Broadcast Message](SCREENSHOTS/broadcast_message.png)
+![](screenshots/broadcast_message.png)
 
 ---
 
 ### Chat Log
 
-![Chat Log](SCREENSHOTS/chat_log.png)
+![](screenshots/chat_log.png)
 
 ---
 
-### TCP Handshake (Wireshark)
+### Connection Closed
 
-![TCP Handshake](SCREENSHOTS/tcp_handshake.png)
+![](screenshots/connection_close.png)
+
+---
+
+### Network Topology
+
+![](screenshots/net.png)
+
+---
+
+### TCP Handshake
+
+![](screenshots/tcp_handshake.png)
 
 ---
 
 ### Wireshark Packet Capture
 
-![Wireshark Capture](SCREENSHOTS/wireshark_capture.png)
+![](screenshots/wireshark_capture.png)
 
 ---
 
-### PingAll Verification
+### PingAll Result
 
-![PingAll](SCREENSHOTS/topology_pingall.png)
-
----
-
-### Connection Closed Successfully
-
-![Connection Close](SCREENSHOTS/connection_close.png)
+![](screenshots/topology_pingall.png)
 
 ---
 
-## Network Configuration
+### Node Configuration
 
-### Host IP Configuration
+![](screenshots/nodes.png)
 
-**Host H1**
+---
 
-![H1](SCREENSHOTS/h1%20ifconfig.png)
+### Host H1 Configuration
 
-**Host H2**
+![](screenshots/h1%20ifconfig.png)
 
-![H2](SCREENSHOTS/h2%20ifconfig.png)
+### Host H2 Configuration
 
-**Host H3**
+![](screenshots/h2%20ifconfig.png)
 
-![H3](SCREENSHOTS/h3%20ifconfig.png)
+### Host H3 Configuration
 
-**Host H4**
+![](screenshots/h3%20ifconfig.png)
 
-![H4](SCREENSHOTS/h4%20ifconfig.png)
+### Host H4 Configuration
+
+![](screenshots/h4%20ifconfig.png)
+
+---
+
+## Performance Graph
+
+![](Graphs/graphs_folder.png)
 
 ---
 
@@ -154,12 +162,12 @@ Clients can communicate with each other in real time through the server.
 
 - TCP Socket Programming
 - Client-Server Architecture
-- Multithreading in Python
+- Multithreading
+- Concurrent Programming
 - Network Communication
 - TCP Three-Way Handshake
-- Packet Analysis using Wireshark
-- Concurrent Programming
-- Chat Application Development
+- Wireshark Packet Analysis
+- Performance Evaluation
 
 ---
 
